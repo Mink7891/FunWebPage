@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: rgb(177, 212, 253); */
+            background-image: url("https://i.gifer.com/ELi1.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        form{
+            border: 2px double black;
+            background-color: rgba(104, 182, 235, 0.938);
+            width: 450px;
+            border-radius: 50px;            
+            height: 650px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 7%;
+        }
+        div {
+            margin-top: 30px;
+        }
+        .save {
+            font-size: 15px;
+            margin-top: 10px;
+            border-radius: 25px;
+            background-color: rgba(81, 144, 185, 0.938);
+            height: 50px;
+            width: 150px;
+            color: white;
+        }
+        .save:hover{
+            background-color: rgba(68, 121, 156, 0.938)
+        }
+        .text{
+            width: 250px;
+            height: 50px;
+        }
+        input{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="1.php" method="get">
+        <span style="font-size: 50px;">🥶</span>
+        <div>
+            <span>Имя:</span>
+            <input style="height: 30px; width: 200px; border-radius: 10px;" name="nm" placeholder="Введите Имя" required>
+        </div>
+
+        <div>
+            Тип: <input name="tp" type="radio" value="1" id=tovar_1 checked> <label for="tovar_1">Шарф</label> 
+            <input name="tp" type="radio" value="2" id=tovar_2> <label for="tovar_2">Перчатки</label> 
+            <input name="tp" type="radio" value="3" id=tovar_3> <label for="tovar_3">Шапка</label>  
+        </div>
+        
+        <div>
+            Цвет: <input name="cm[]" type="checkbox" value="red"> Красный <br>
+            <input style="margin-left: 56px;" name="cm[]" type="checkbox" value="blue"> Синий <br>
+            <input style="margin-left: 56px;" name="cm[]" type="checkbox" value="white"> Белый <br>
+            <input style="margin-left: 56px;" name="cm[]" type="checkbox" value="black"> Чёрный <br>
+            <input style="margin-left: 56px;" name="cm[]" type="checkbox" value="violet"> Фиолетовый
+        </div>
+        
+        <div>
+            <span>Размер:</span> 
+            <select>
+                <option value="1">S</option>
+                <option value="2">L</option>
+                <option value="3">XL</option>
+                <option value="4">XXL</option>
+            </select>
+        </div>
+        
+        <div>
+            <span>Номер тел.:</span> 
+            <input style="height: 30px; width: 200px; border-radius: 10px;" name="ph" type="tel" placeholder="Введите номер телефона" 
+                pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required>
+        </div>
+
+        <div>
+            <span>Комментарий:</span>
+            <textarea style="font-size: 17px; border-radius: 10px;" class="text" placeholder="Введите комментарий" maxlength="100"></textarea>
+        </div>
+        <input class="save" type="submit" Отправить>
+    </form>
+    <!-- <img src="https://i.gifer.com/VhdL.gif" style="position: absolute; left: 50px; top: 1%; height: 800px; width: 250px;" alt="fire">
+    <img src="https://i.gifer.com/VhdL.gif" style="position: absolute; right: 50px; top: 1%; height: 800px; width: 250px;" alt="fire"> -->
+    <img src="https://i.gifer.com/XiPu.gif" style="position: absolute; left: 50px; top: 1%; height: 800px; width: 500px;">
+    <img src="https://i.gifer.com/XiPu.gif" style="position: absolute; right: 50px; top: 1%; height: 800px; width: 500px;">
+</body>
+</html>
